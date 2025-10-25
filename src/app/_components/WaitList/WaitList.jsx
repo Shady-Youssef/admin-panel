@@ -209,25 +209,25 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   <Container sx={{mt:5}} maxWidth>
     <Grid container spacing={3}>
       
-        <Grid sx={{mr:3,p:2, bgcolor:'#F4F7F9', width:{xs:'100%', md:'auto'}}} size={{xs:12, md:3}}>
+        <Grid sx={{mr:{xs:0, md:3},p:2, bgcolor:'#F4F7F9', width:{xs:'100%', md:'auto'}}} size={{xs:12, md:3}}>
             <Box component={'aside'} sx={{display:'flex', justifyContent:'space-between', flexDirection:'column' , height:'100%', textAlign:{xs:'center', md:'left'}}} >
                 <Box>
                     <Image src="/images/logo.svg" alt="logo" width={150} height={38} />
                 </Box>
-                <Box>
+                <Box sx={{py:{xs:2,md:0}}}>
                     <Typography sx={{fontWeight:'700'}} variant="body1" color="#324054"> Postcode</Typography>
                     <TextField
                     value={'ZIP'}
                     sx={{bgcolor:'#FFFFFF'}}
                     />
                 </Box>
-                <Box>
+                <Box sx={{py:{xs:2,md:0}}}>
                     <Typography sx={{fontWeight:'700'}} variant="body1" color="#324054"> Registration Status</Typography>
                         <Box sx={{display:'flex', justifyContent:{xs:'center', md:'flex-start'}}}>
                     {status}
                     </Box>
                 </Box>
-                <Box>
+                <Box sx={{py:{xs:2,md:0}}}>
                     <Typography sx={{fontWeight:'700'}} variant="body1" color="#324054"> Date Registered</Typography>
                     <Box sx={{display:'flex', flexDirection:{xs:'column', xl:'row', gap:3}}}>
                     <Box sx={{display:'flex', justifyContent:{xs:'center', md:'flex-start'}}}>
@@ -247,13 +247,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
                     </Box>
                     </Box>
                 </Box>
-                    <Box>
+                    <Box sx={{py:{xs:2,md:0}}}>
                     <Typography sx={{fontWeight:'700'}} variant="body1" color="#324054"> Vendor Type</Typography>
                         <Box sx={{display:'flex', justifyContent:{xs:'center', md:'flex-start'}}}>
                     {vendor}
                     </Box>
                 </Box>
-                <Box>
+                <Box sx={{py:{xs:2,md:0}}}>
                      <Typography sx={{fontWeight:'700'}} variant="body1" color="#324054"> Service Offering</Typography>
                         <Box sx={{display:'flex', justifyContent:{xs:'center', md:'flex-start'}}}>
                     {service}
@@ -269,7 +269,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
         </Grid>
 
         <Grid sx={{mx:3}} size={{xs:12, md:9}} >
-                    <Typography sx={{fontWeight:400, mb:3}} variant="h4" color="#12153A">Waitlist</Typography>
+                    <Typography sx={{fontWeight:400, mb:3, mt:2}} variant="h4" color="#12153A">Waitlist</Typography>
             <Box  sx={{display:'flex', justifyContent:'space-between', mb:2}}>
                 <Box>
             <Typography component={'span'}  sx={{fontWeight:500}} variant="body1" > <Chip sx={{bgcolor:'#C8D5D9', borderRadius:'8px', color:'#4E4636'}} label="Service Providers" onClick={handleClick} /> </Typography>
