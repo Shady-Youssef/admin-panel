@@ -45,7 +45,7 @@ export default function Navbar() {
     <>
     <AppBar sx={{bgcolor:'#F4F7F9'}} position="static">
       <Container  maxWidth>
-        <Toolbar sx={{px:10}} disableGutters>
+        <Toolbar sx={{px:{xs:0,md:10}}} disableGutters>
             {/* Mobile View */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -54,7 +54,7 @@ export default function Navbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#000"
             >
               <MenuIcon />
             </IconButton>
