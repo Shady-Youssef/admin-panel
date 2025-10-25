@@ -20,9 +20,9 @@
     "@mui/x-date-pickers": "^6.19.6",
     "@mui/x-date-pickers-pro": "^8.14.1",
     "dayjs": "^1.11.18",
-    "next": "15.0.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
