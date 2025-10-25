@@ -19,7 +19,7 @@
     "@mui/x-date-pickers": "^8.14.1",
     "@mui/x-date-pickers-pro": "^8.14.1",
     "dayjs": "^1.11.18",
-    "next": "^16.0.0-canary.18",
+    "next": "15.0.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
